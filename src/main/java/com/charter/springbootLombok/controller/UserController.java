@@ -3,7 +3,6 @@ package com.charter.springbootLombok.controller;
 import com.charter.springbootLombok.model.User;
 import com.charter.springbootLombok.service.UserService;
 import javassist.NotFoundException;
-import org.omg.CosNaming.NamingContextPackage.NotFound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

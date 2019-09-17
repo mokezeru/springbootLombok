@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-@Getter @Setter @NoArgsConstructor // <--- THIS is for lombok
+@Getter @Setter @NoArgsConstructor // <--- This is for lombok
 public class User implements Serializable {
 
 
@@ -24,5 +24,5 @@ public class User implements Serializable {
         this.age = age;
     }
 
-    // getters and setters: ~30 extra lines of code
+    // getters and setters: ~30 extra lines of code ~ Thanks lombok
 }
