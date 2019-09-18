@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Entity
 @Getter @Setter // <--- This is for lombok getters and setters
-@Builder // <-- for Lombok builder pattern
+@Builder // <-- for Lombok builder pattern, to build objects with optional fields
 @NoArgsConstructor // mostly used to create a constructor with different access modification
 @AllArgsConstructor // will create constructor receiving all non-static fields
 //@RequiredArgsConstructor // will create constructor receiving non-static final fields.
