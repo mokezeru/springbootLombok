@@ -12,6 +12,7 @@ import java.io.Serializable;
 @Getter @Setter @NoArgsConstructor // <--- This is for lombok
 public class User implements Serializable {
 
+    private static final long serialVersionUID = -5091234194436948032L;
 
     private @Id Long id; // will be set when persisting
     private String firstName;
