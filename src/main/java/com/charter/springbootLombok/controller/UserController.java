@@ -25,7 +25,7 @@ public class UserController {
         }
 
         @GetMapping("/users/{id}")
-        public ResponseEntity <User> gUserById(@PathVariable(value = "id") Long userId) throws NotFoundException{
+        public ResponseEntity <User> getUserById(@PathVariable(value = "id") Long userId) throws NotFoundException{
             User user = userService.findUser(userId);
             if(user == null)
                 throw new NotFoundException("User not found for this id : " + userId);
