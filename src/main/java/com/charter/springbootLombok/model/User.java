@@ -3,6 +3,8 @@ package com.charter.springbootLombok.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
@@ -17,6 +19,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     private static final long serialVersionUID = -5091234194436948032L;
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private @Id Long id; // will be set when persisting
     private String firstName;
     private String lastName;
